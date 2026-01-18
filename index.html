@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Market Plan</title>
+    <style>
+        /* Custom Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        :root {
+            --primary-sky: #00B4D8;
+            --light-sky: #CAF0F8;
+            --mid-sky: #90E0EF;
+            --deep-ocean: #03045E;
+            --accent-blue: #0077B6;
+            --white: #ffffff;
+            --gray-bg: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--gray-bg);
+            color: var(--deep-ocean);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        section {
+            max-width: 1100px;
+            margin: 40px auto;
+            background: var(--white);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 180, 216, 0.1);
+            border-top: 8px solid var(--primary-sky);
+        }
+        
+        /* Phase Titles */
+        .phase {
+            font-size: 2.2rem;
+            color: var(--deep-ocean);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            border-bottom: 4px solid var(--light-sky);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        
+        /* Goals Section */
+        .goal {
+            background: linear-gradient(135deg, var(--primary-sky), var(--accent-blue));
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        
+        .goal h3 {
+            margin-top: 0;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .goal p {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 0;
+        }
+        
+        /* Action Cards Grid */
+        .action-container, .actions-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: var(--white);
+            border: 1px solid var(--light-sky);
+            padding: 20px;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 119, 182, 0.15);
+            border-color: var(--primary-sky);
+        }
+        
+        .card-title {
+            color: var(--accent-blue);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .card p {
+            font-size: 0.95rem;
+            color: #444;
+            margin: 0;
+        }
+        
+        /* Messaging Section */
+        .messaging {
+            background: var(--light-sky);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid var(--primary-sky);
+            margin-bottom: 30px;
+        }
+        
+        .messaging h4 {
+            margin: 0;
+            color: var(--accent-blue);
+            font-size: 1.1rem;
+        }
+        
+        .messaging p {
+            font-style: italic;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+        
+        /* Sales Channels */
+        .sales-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .sales-container .card {
+            flex: 1;
+            min-width: 200px;
+            background: var(--deep-ocean);
+            color: var(--mid-sky);
+            text-align: center;
+            padding: 15px;
+            justify-content: center;
+        }
+        
+        .sales-container .card p {
+            color: var(--white);
+            font-weight: 500;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .phase {
+                font-size: 1.6rem;
+            }
+            
+            section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1 class="phase">Phase 1: Testing and Early Adoption</h1>
+
+        <div class="goal">
+            <h3 class="heading">Goal</h3>
+            <div>
+                <p>200+ premium merchants</p>
+            </div>
+        </div>
+
+        <div class="actions">
+            <div class="action-container">
+                <div class="card">
+                    <h4 class="card-title">Spot Quiz</h4>
+                    <p>Organize quiz in the ground floor of the shop and also in different university campuses to let everyone know what we do</p>
+                </div>
+                <div class="card">
+                    <h4 class="card-title">Pitha Fest</h4>
+                    <p>Collaborate with different shops to host pitha fests</p>
+                </div>
+                <div class="card">
+                    <h4 class="card-title">Valentines Day Special</h4>
+                    <p>Offer attractive gifts for couples for the month of February</p>
+                </div>
+                <div class="card">
+                    <h4 class="card-title">Merchant Onboarding</h4>
+                    <p>Offering 0% commission for the first 1-2 months to incentivize sign-ups.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="messaging">
+            <h4>Messaging to Consumers and Merchants</h4>
+            <p>Structure different but engaging messages to consumers and merchants separateky</p>
+        </div>
+
+        <div class="sales">
+            <div class="sales-container">
+                <div class="card">
+                    <p>Physical banners at partner shops</p>
+                </div>
+                <div class="card">
+                    <p>Advertising on the billboards beside roads</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1 class="phase">Phase 2: Expansion and Scale</h1>
+        <div class="goal">
+            <h3 class="heading">Goal</h3>
+            <div>
+                <p>Expand to other high density cities like Chattogram & Sylhet</p>
+            </div>
+        </div>
+
+        <div class="actions">
+            <div class="actions-container">
+                <div class="card">
+                    <h4 class="card-title">Spinning Wheels</h4>
+                    <p>Cashback offers and many more if you can land a prize by spinning the mystery wheel</p>
+                </div>
+                <div class="card">
+                    <h4 class="card-title">FIFA WC 2026</h4>
+                    <p>Prizes if you can score a goal in a small goal post and you can also win prizes the next day if you can predict today's winner</p>
+                </div>
+                <div class="card">
+                    <h4 class="card-title">T20 WC 2026</h4>
+                    <p>Trivia Quiz based on T20 WC of previous years</p>
+                </div>
+                <div class="card">
+                    <h4 class="card-title">Summer Concerts</h4>
+                    <p>Sponsoring summer concerts at different cities and advertising there</p>
+                </div>
+                <div class="card">
+                    <h4 class="card-title">Classical Photobooths</h4>
+                    <p>Take aesthetic pictures with your friends and loved ones</p>
+                </div>
+                <div class="card">
+                    <h4 class="card-title">Flood Donations</h4>
+                    <p>Collecting funds to donate to the people who will be affected by flood in different areas</p>
+                </div>
+                <div class="card">
+                    <h4 class="card-title">Religious Festivals Offers</h4>
+                    <p>Discounts and sales during religious events like Eid and Puja</p>
+                </div>
+                <div class="card">
+                    <h4 class="card-title">Proximity Marketing</h4>
+                    <p>Implement GPS-based triggers to send push notifications when users are within 500 meters of a partner merchant</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="messaging">
+            <h4>Don't Just Watch the Game</h4>
+            <p>Win the Game</p>
+        </div>
+
+        <div class="sales">
+            <div class="sales-container">
+                <div class="card">
+                    <p>Influencer Collaborations</p>
+                </div>
+                <div class="card">
+                    <p>SMS Marketing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1 class="phase">Phase 3: Habit Formation and Retention</h1>
+        <div class="goal">
+            <h3 class="heading">Goal</h3>
+            <div>
+                <p>Achieve 60% retention rate and plan future roadmaps</p>
+            </div>
+        </div>
+
+        <div class="actions">
+            <div class="actions-container">
+                <div class="card">
+                    <h4 class="card-title">Top 100 Users of the years</h4>
+                    <p>High value gifts for the top consumers</p>
+                </div>
+                <div class="card">
+                    <h4 class="card-title">Point System</h4>
+                    <p>Giving consumers a card where they can get points after each purchase and can use them upto a specific time</p>
+                </div>
+                <div class="card">
+                    <h4 class="card-title">Winter and Year-End Sales</h4>
+                    <p>Year-end sales and arranging a month-long donation event where people can donate new/old clothes for the poor during winter</p>
+                </div>
+                <div class="card">
+                    <h4 class="card-title">Cyclone Donations</h4>
+                    <p>Collecting donations to help the cyclone affected people with foods and also financially</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="messaging">
+            <h4>Enjoy the Winter</h4>
+            <p>With Everyone</p>
+        </div>
+
+        <div class="sales">
+            <div class="sales-container">
+                <div class="card">
+                    <p>PR articles in major newspapers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
